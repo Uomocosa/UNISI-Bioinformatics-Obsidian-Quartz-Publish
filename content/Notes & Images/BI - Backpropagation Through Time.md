@@ -1,0 +1,11 @@
+##### Questions
+- ***What is Backpropagation Through Time?***
+	- **Backpropagation through time** (BPTT) is a training algorithm used for recurrent neural networks (RNNs). <br>It is an extension of the standard backpropagation algorithm used for feedforward neural networks, which is used to update the weights of the network based on the difference between the network's output and the desired output.
+	- In BPTT, the weights of the network are updated based on the difference between the final output and the desired output, as well as the **internal states of the network at each time step**. <br>==The algorithm works by "unrolling" the recurrent connections in the network over a fixed number of time steps, creating a sequence of interconnected feedforward networks==.
+	- The basic idea behind BPTT is to compute the gradient of the error function with respect to the weights of the network at each time step, and then propagate these gradients backwards through the network over time, updating the weights accordingly. <br>This requires computing the gradients of the output with respect to the internal states at each time step, as well as the gradients of the internal states with respect to the previous states and the inputs.
+	- ==One challenge of BPTT is that the gradients can become very large or very small as they are propagated backwards through time, leading to instability or vanishing gradients==. <br>This can make training RNNs with BPTT difficult, especially for long sequences. To address this issue, various techniques have been developed, including gradient clipping, weight regularization, and truncated backpropagation through time, which limits the length of the sequence over which gradients are propagated.
+	- Despite these challenges, BPTT remains one of the most widely used algorithms for training RNNs, and has been successfully applied to a variety of applications in natural language processing, speech recognition, and time series prediction.
+
+##### —————————————————————
+##### Slides with Notes
+![[BI - Lecture 6 - NNSD-028.png]]![[BI - Lecture 6 - NNSD-029.png]]![[BI - Lecture 6 - NNSD-030.png]]![[BI - Lecture 6 - NNSD-031.png]]![[BI - Lecture 6 - NNSD-032.png]]![[BI - Lecture 6 - NNSD-033.png]]![[BI - Lecture 6 - NNSD-034.png]]

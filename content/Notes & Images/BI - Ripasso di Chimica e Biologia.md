@@ -1,0 +1,35 @@
+Concetti ripassati:
+- [[BI - Intermolecular Forces]]
+- [[BI - Enzymes]]
+- [[BI - Chromosomes]]
+- [[BI - Nucleotidi]]
+- [[BI - Amminoacidi]]
+- [[BI - Basi del DNA]]
+- Geni e Genomi
+- [[BI - Proteine]]
+- [[BI - RNA Primer]]
+- [[BI - DNA Polymer I & III]]
+- [[BI - Primase]]
+- [[BI - Exonuclease Activity]]
+- Carbonio importante per la formazione di zuccheri
+- [[BI - Valenza]] & [[BI - Elettronegatività]]
+- [[BI - Hydrophilic & Hydrophobic]]
+- [[BI - Lipidi e Grassi]]
+- [[BI - Eucarioti, Entroni, Procarioti]]
+- [[BI - Citosoma, Citoplasma]]
+- [[BI - Organismi Omologi]]
+- Ibridazione (microarray e altro)
+- Equivalenti Genomici (???)
+<br>
+- Dot Plots
+- Simple Alignments
+	- Homology
+- Gaps
+- Score Matrices
+- PAM (Percentage Accepted Mutation) Matrices
+	- PAM$_x$ : $x$ mutation every 100 aminoacides
+- BLOSUM (BLOcks Amino Acid SUbstitution) Matrices
+	- Doesn’t contemplate the concept of evolution, they only look for similarities
+	- BLOSUM$_x$ : contains a block of proteins where they are similar at leas for $x$ percentage
+	- BLOSUM Matrices contains only **integer numbers**
+	- 

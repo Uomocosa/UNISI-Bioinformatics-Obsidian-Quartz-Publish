@@ -1,0 +1,20 @@
+##### Questions
+- ***What are Recency Constants?***
+	- Recency constants are a **hyperparameter** used in the design of Elman networks and other types of recurrent neural networks (RNNs) that incorporate a memory mechanism. <br>==They control the rate at which information from previous inputs decays over time in the hidden layer of the network==.
+	- In Elman networks, the recency constant is typically denoted by the symbol "$\alpha$". It is used to control the degree to which the current hidden state is influenced by previous hidden states. <br>Specifically, the current hidden state is computed as a weighted sum of the current input and the previous hidden state, with the recency constant controlling the weight given to the previous state.
+		- ==A higher recency constant (i.e., a value closer to $1$) gives more weight to the most recent inputs, allowing the network to respond quickly to changes in the input sequence==. <br>However, this may also make the network more susceptible to noise in the input sequence or to overfitting, where the network becomes too specialized to the training data.
+		- ==Conversely, a lower recency constant (i.e., a value closer to $0$) gives more weight to older inputs, allowing the network to better capture long-term dependencies in the input sequence==. <br>However, this may also make the network slower to respond to changes in the input sequence, and may result in the network missing important patterns or trends in the data.
+	- The appropriate value of the recency constant depends on the specific task and the characteristics of the input sequence. <br>It is typically chosen through a process of trial and error or through hyperparameter optimization techniques.
+- ***What are Jordan Networks?***
+	- ==Jordan networks, also known as feedback networks or Jordan-Elman networks, are a type of recurrent neural network (RNN)== that were introduced by Michael Jordan in 1986. <br>==They are similar to Elman networks, but instead of using a separate set of recurrent connections to maintain a memory of previous inputs, **they use feedback connections from the output layer to the hidden layer**==.
+	- Jordan networks consist of three main layers: an input layer, a hidden layer, and an output layer. 
+		- The input layer receives sequential data, with each input being processed one at a time. 
+		- ==The hidden layer contains a set of neurons that compute a weighted sum of the current input and the previous output, **using feedback connections from the output layer**==. 
+		- The output layer produces a prediction or classification based on the current state of the hidden layer.
+	- In a Jordan network, the feedback connections from the output layer to the hidden layer serve as a memory mechanism. <br>The hidden layer uses the feedback from the output layer to adjust its internal state, allowing it to maintain a memory of previous inputs. <br>This memory is then used to inform the processing of the current input, and to generate a prediction or classification at the output layer.
+	- One advantage of Jordan networks is that they are capable of capturing complex temporal dependencies in the input sequence, including long-term dependencies. <br>This makes them well-suited to tasks such as speech recognition, natural language processing, and time series prediction.
+	- Jordan networks are similar in structure to Elman networks, but they use feedback connections from the output layer to the hidden layer, whereas Elman networks use recurrent connections from the hidden layer to itself. <br>==This makes Jordan networks more flexible in some respects, as they allow information to flow directly from the output layer to the hidden layer. <br>However, they may be more difficult to train than Elman networks, as the feedback connections can lead to instability or vanishing gradients if not carefully initialized or regularized==.
+
+##### —————————————————————
+##### Slides with Notes
+![[BI - Lecture 6 - NNSD-012.png]]![[BI - Lecture 6 - NNSD-013.png]]![[BI - Lecture 6 - NNSD-014.png]]![[BI - Lecture 6 - NNSD-015.png]]
